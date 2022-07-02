@@ -1,0 +1,96 @@
+.repo{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.search .searchInput{
+    width: 100%;
+    position: relative;
+}
+.searchInput span{
+    position: absolute;
+    margin: 8px 10px;
+    color: gainsboro;
+}
+.searchInput input{
+    width: 100%;
+    height: 40px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 20px;
+}
+
+.comparison{
+    width: 300px; 
+    padding: 10px; 
+    background-color: #fff; 
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.comparison .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comparison button{
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: gainsboro;
+    color: black;
+    margin: 20px 70px;
+    cursor: pointer;
+}
+.pageComparison{
+    background-color: darksalmon;
+    width: 100% ;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap : wrap;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pageRepos{
+    width :  100%;
+    padding: 20px;
+}
+
+.pageRepo{
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.line{
+    border: 0.5px solid gray;
+    width: 100%;
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 10px;
+}
+a{
+    text-decoration: none;
+}
