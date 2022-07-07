@@ -3,12 +3,24 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    
+}
+.sera{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 990;
+    background-color: lightgray;
 }
 .search{
     width: 100%;
     margin: 40px 0;
     display: flex;
     flex-direction: column;
+    top: 40px;
+    z-index: 99;
+    
+   
 }
 .search .searchInput{
     width: 100%;
@@ -20,19 +32,36 @@
     color: gainsboro;
 }
 .searchInput input{
-    width: 100%;
+    width: 80%;
     height: 40px;
     padding-left: 35px;
     border: none;
     border-radius: 20px;
 }
 
+.searchInput button{
+    width: 15%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: darksalmon;
+    margin-left: 10px;
+}
+@media(max-width : 767px){
+    .searchInput button{
+        width: 20%;
+        margin: 10px 100px;
+
+    }
+}
+
 .comparison{
     width: 300px; 
     padding: 10px; 
     background-color: #fff; 
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 20px;
+    height: fit-content;
 }
 .comparison .name{
     display: flex;
@@ -51,33 +80,90 @@
     margin: 20px 70px;
     cursor: pointer;
 }
-.pageComparison{
-    background-color: darksalmon;
-    width: 100% ;
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    flex-wrap : wrap;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 .pageRepos{
     width :  100%;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+@media(max-width : 767px){
+    .pageRepos{
+        width :  75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 .pageRepo{
     display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 30%;
 }
 
-.line{
-    border: 0.5px solid gray;
-    width: 100%;
-    margin: 20px 0;
-    opacity: 0.7;
+.pageComparison{
+  
+    background-color: darksalmon;
+    width: 65% ;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap : wrap;
+    border-radius: 10px;
+    right: 0;
+    position: fixed;
+    margin-right: 20px;
+    overflow-y: scroll; 
+    height: 500px;
+
+}
+@media(max-width : 767px ){
+    .pageComparison{
+        background-color: darksalmon;
+        width: 50% ;
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap : wrap;
+        border-radius: 10px;
+        
+    }
+}
+@media(max-width : 992px ){
+    .pageComparison{
+        background-color: darksalmon;
+        width: 50% ;
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap : wrap;
+        border-radius: 10px;
+      
+        position: fixed;
+        margin-right: 20px;
+        overflow-y: scroll; 
+        height: 500px;
+
+    }
+}
+@media(max-width : 1115px ){
+    .pageComparison{
+        background-color: darksalmon;
+        width: 50% ;
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap : wrap;
+        border-radius: 10px;
+      
+        position: fixed;
+        margin-right: 20px;
+        overflow-y: scroll; 
+        height: 500px;
+
+    }
 }
 
 img{
